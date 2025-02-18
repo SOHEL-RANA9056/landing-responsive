@@ -4,10 +4,13 @@ html {
 }
 body {
     color:#24292e;
+    font-family: "sawarabi gothic"
 }
+
 a {
     text-decoration: none;
 }
+
 p {
     font-size: 1.3rem;
 }
@@ -19,11 +22,25 @@ li {
     
 font-size: 1.2rem;
 }
+
 .wrapper {
     max-width: 960px;
     margin: 0 auto 130px auto;
     font-size: 0.9rem;
     padding: 0 4%;
+}
+.site-title{
+    line-height: 1px;
+    font-weight:  600;
+    font-size:  2.4rem;
+}
+.site-title a{
+    color: #24292e;
+}
+.sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
 }
 
 /*-------------------
@@ -37,7 +54,7 @@ align-items: center;
 justify-content: space-between;
 height: 170px;
 margin: 0 auto;
-padding: 0 4%
+padding: 0 4%;
 }
 
 #header ul {
@@ -55,53 +72,18 @@ header li a {
 color: #24292e;
 transition: all 0.3s;
 }
- #header li a :hover {
+ #header li a:hover {
  opacity: 0.5;
 }
  #header li img.icon {
  width: 30px;
 }
-
-.site-title {
-    line-height: 1px;
-    font-weight: 600;
-    font-size: 2.4rem;
-}
-
-.site-title a {
-    color: #24292e;
-}
-.sec-title {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 65px;
-}
-/* --------------------
-smart phone 
---------------------- */
-
-@media screen and (max-width:600px) {
-    .site-title {
-        margin-top: 20px;
-    }
-    /* ヘッダー */
-    #header {
-        flex-direction: column;
-        height: auto;
-        margin-top: 20px;
-        line-height: 40px;
-    }
-    #header li {
-        font-size: 0.8rem;
-        margin-left: 20px;
-    }
-    #header li img.icon {
-        width: 20px;
-        margin-top: 15px;
-    }
     /* main */
+    #mainvisual{
+        margin-bottom: 80px;
+     }
     #mainvisual img {
-        width: 100;
+        width: 100%;
         max-width: 1920px;
         height: 400px;
         object-fit: cover;
@@ -109,6 +91,9 @@ smart phone
     /* ------------------
     about
     --------------------- */
+    #about ul {
+        margin-bottom: 30px;
+    }
     #about ul li {
         margin-bottom: 3px;
     }
@@ -138,8 +123,8 @@ smart phone
         transition: all 0.3s;
     }
     #works ul li img:hover {
-        transform: scale(1.2 1.2);
-        transform: rotate(180deg);
+        transform: scale(1.2, 1.2);
+        transform: rotate(40)
         opacity: 0.7;
     }
     /* --------------------
@@ -194,10 +179,9 @@ smart phone
     }
     #contact .button input {
         border: solid 1px #24292e;
-        width: 200px
+        width: 200px;
         background-color: #24292e;
         color: #fff;
-        padding: 15px 0;
         transition: all 0.3s;
     }
     #contact .button input:hover{
@@ -206,12 +190,30 @@ smart phone
     }
     #
     /* --------------------
-    smart phone
-    ----------------------- */
-}
-/* works */
+    sp
+    --------------------*/
+    @media screen and ( max-width: 600px) {
+        .site-title {
+            margin-top: 20px;
+        }
+        /* ヘッダー */
+        #header {
+            flex-direction: column;
+            height: auto;
+            margin-top: 20px;
+            line-height: 40px;
+        }
+        #header li {
+            font-size: 0.8rem;
+            margin-left: 20px;
+        }
+        #header li img.icon {
+            width: 20px;
+            margin-top: 15px;
+        }
+      /* works */
 #works ul {
-flex-direction: column;
+    flex-direction: column;
 }
 #works ul li {
     width: 100%;
@@ -230,4 +232,7 @@ flex-direction: column;
     width: 100%;
     padding-top: 0;
 }
+      
+}
+
     
